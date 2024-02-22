@@ -1,19 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
+import { NativeWindStyleSheet } from "nativewind";
+
+NativeWindStyleSheet.setOutput({
+  default: "native",
+});
+
 import { StyleSheet, Text, View } from 'react-native';
+import Login from "./screens/login";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Hello World</Text>
+    <View className="h-full bg-slate-50">
+      <Login/>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
