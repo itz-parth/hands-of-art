@@ -26,7 +26,6 @@ const Login = () => {
                 <TouchableOpacity>
                     <Text className="text-green-700"> Register</Text>
                 </TouchableOpacity>
-                
             </View>
         </View>
   )
